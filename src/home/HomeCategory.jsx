@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const subTitle = "Choose Any Products";
 const title = "Buy Everything with Us";
@@ -51,9 +52,22 @@ const HomeCategory = () => {
                     <span className="subtitle">{subTitle}</span>
                     <h2 className="title">{title}</h2>
                 </div>
+
                 {/*section card */}
-                <div>
-                    
+                <div className="section-wrapper">
+                    <div className="row g-4 justify-content-center row-cols-md-3 row-cols-sm-2 row-cols-1">
+                    {
+                            categoryList.map((val,i ) => (<div key={i}> 
+                            <Link to="/shop" className="category-item">
+                                <div className="category-inner">
+                                    <div className="category-thumb">
+                                        <img src={val.imgUrl} alt="" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>))
+                    }
+                    </div>
                 </div>
             </div>
     </div>;
