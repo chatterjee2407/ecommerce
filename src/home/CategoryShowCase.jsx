@@ -5,7 +5,7 @@ const title = "Our Products";
 
 const ProductData = [ 
   { 
-    imgUrl: 'src/assets/images/categoryTab/01.jpg', 
+    imgUrl: image1, 
     cate: 'Shoes', title: 'Nike Premier X', 
     author: 'assets/images/course/author/01.jpg', 
     brand: 'Nike',
