@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import image1 from "../assets/images/category/01.jpg"
+import image2 from "../assets/images/category/02.jpg"
+import image3 from "../assets/images/category/03.jpg"
+import image4 from "../assets/images/category/04.jpg"
+import image5 from "../assets/images/category/05.jpg"
+import image6 from "../assets/images/category/06.jpg"
 
 const subTitle = "Choose Any Products";
 const title = "Buy Everything with Us";
@@ -8,37 +13,37 @@ const btnText = "Get Started Now";
 
 const categoryList = [
 {
-imgUrl: '../../src/assets/images/category/01.jpg',
+imgUrl: image1,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'DSLR Camera',
 },
 {
-imgUrl: 'src/assets/images/category/02.jpg',
+imgUrl: image2,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Shoes',
 },
 {
-imgUrl: 'src/assets/images/category/03.jpg',
+imgUrl: image3,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Photography',
 },
 {
-imgUrl: 'src/assets/images/category/04.jpg',
+imgUrl: image4,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Formal Dress',
 },
 {
-imgUrl: 'src/assets/images/category/05.jpg',
+imgUrl: image5,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Colorful Bags',
 },
 {
-imgUrl: 'src/assets/images/category/06.jpg',
+imgUrl: image6,
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Home Decor',
@@ -52,7 +57,7 @@ const HomeCategory = () => {
                 <div className="section-header text-center" >
                     <span className="subtitle">{subTitle}</span>
                     <h2 className="title">{title}</h2>
-                </div><img src={image1} />
+                </div>
                 {/*section card */}
                 <div className="section-wrapper">
                     <div className="row g-4 justify-content-center row-cols-md-3 row-cols-sm-2 row-cols-1">
