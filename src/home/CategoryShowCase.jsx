@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import image1 from "../assets/images/categoryTab/01.jpg"
 
 const title = "Our Products";
 
@@ -22,7 +23,8 @@ const ProductData = [
   }, 
   { 
     imgUrl: 'src/assets/images/categoryTab/03.jpg', 
-    cate: 'Phones', title: 'iPhone 12', 
+    cate: 'Phones', 
+    title: 'iPhone 12', 
     author: 'src/assets/images/categoryTab/brand/apple.png',
      brand: 'Apple',
       price: '$199.00', 
