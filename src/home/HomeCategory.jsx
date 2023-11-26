@@ -63,7 +63,7 @@ const HomeCategory = () => {
 
                                 {/** image */}
                                     <div className="category-thumb">
-                                        <img src={val.imgUrl} alt="" />
+                                        <img src={val.imgUrl} alt="imgcrashed" />
                                     </div>
 
                                     {/** content*/}
@@ -77,6 +77,9 @@ const HomeCategory = () => {
                             </Link>
                         </div>))
                     }
+                    </div>
+                    <div className="text-center mt-5">
+                        <Link to="/shop" className="lab-btn"><span>{btnText}</span></Link>
                     </div>
                 </div>
             </div>
