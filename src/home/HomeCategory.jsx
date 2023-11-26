@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+// import image1 from "../assets/images/category/01.jpg"
 
 const subTitle = "Choose Any Products";
 const title = "Buy Everything with Us";
@@ -7,13 +8,13 @@ const btnText = "Get Started Now";
 
 const categoryList = [
 {
-imgUrl: 'src/assets/images/category/01.jpg',
+imgUrl: '../../public/images/category/01.jpg',
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'DSLR Camera',
 },
 {
-imgUrl: 'src/assets/images/category/02.jpg',
+imgUrl: '../../public/images/category/02.jpg',
 imgAlt: 'category rajibraj91 rajibraj',
 iconName: 'icofont-brand-windows',
 title: 'Shoes',
