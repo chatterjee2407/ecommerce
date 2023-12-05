@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Ratting from '../components/Ratting'
 import image1 from "../assets/images/categoryTab/01.jpg"
 import image2 from "../assets/images/categoryTab/02.jpg"
 import image3 from "../assets/images/categoryTab/03.jpg"
@@ -124,6 +125,14 @@ const CatgoryShowCase = () => {
                         <div className="course-inner">
                             <div className="course-thubm">
                                 <img src={product.imgUrl} alt=""/>
+                                <div className="course-cate">
+                                        <a href="a">{product.cate}</a>
+                                  </div>
+                                  <div className="course-reiew">
+                                    
+                                          <Ratting/>
+
+                                 </div>
                           </div>
                         </div>
                       </div>

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo/logo.png"
+import logo from "../assets/images/logo/sm.jpeg"
 
 const NavItems = () => {
   //useState use kia 
@@ -16,6 +16,10 @@ const[headerFixed,setHeaderFixed] = useState(false);
       setHeaderFixed(false);
     }
   })
+
+  let mainLogo = {
+    width : '80px',
+  }
 
   return (
     <header className={`header-section style-4 ${headerFixed ? "header-fixed fadeInUp" : ""}`}>
@@ -37,7 +41,7 @@ const[headerFixed,setHeaderFixed] = useState(false);
                 <div className='logo-search-acte'>
                     <div className='logo'>
                       <Link to={"/"}>
-                          <img src={logo} alt="" />
+                          <img style={mainLogo} src={logo} alt="" />
 
                       </Link>
                   </div>
@@ -49,7 +53,7 @@ const[headerFixed,setHeaderFixed] = useState(false);
                   <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
                     <li><Link to="/"> Home </Link></li>
                     <li><Link to="/shop"> Shop </Link></li>
-                    <li><Link to="/blog"> Blog </Link></li>
+                    {/* <li><Link to="/blog"> Blog </Link></li> */}
                     <li><Link to="/about"> About </Link></li>
                     <li><Link to="/contact"> Contact </Link></li>
 
